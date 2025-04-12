@@ -6,6 +6,7 @@ public class Principal {
         boolean iterar=true;
         while (iterar){
             Scanner entrada =new Scanner(System.in);
+            //pido cantidad
             double cantidad;
             double cantidadConseguida;
             GeneradorDeArchivos generarAchivo =new GeneradorDeArchivos();
