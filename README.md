@@ -1,1 +1,0 @@
-Reserva de lugar readme
