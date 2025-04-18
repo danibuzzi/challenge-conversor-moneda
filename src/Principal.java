@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -8,31 +9,27 @@ public class Principal {
             Scanner entrada =new Scanner(System.in);
             //pido cantidad
             double cantidad;
-            double cantidadConseguida;
+            double cantidadConseguida=0;
             GeneradorDeArchivos generarAchivo =new GeneradorDeArchivos();
-            Moneda mon;
+            Moneda mon=null;
+            int opcion=0;
             ConversionMoneda convertir =new ConversionMoneda();
             mostrarMenu();
 
+           //do {
+               opcion = entrada.nextInt();
 
-            int opcion= entrada.nextInt();
-
-                System.out.println("Ingrese la cantidad a cambiar ");
-                cantidad = entrada.nextDouble();
-
+               System.out.println("Ingrese la cantidad a cambiar ");
+               cantidad = entrada.nextDouble();
+           //}while (!Integer.valueOf(opcion)) || Double.valueOf(cantidad)!=false)
 
 
             switch (opcion){
                 case 1:{
                     mon=convertir.convertirMonedas("USD","ARS");
+                    System.out.println(mon);
                     cantidadConseguida = Math.round((cantidad * (Double.valueOf(mon.conversion_rate()))));
                     System.out.println(cantidad +" dolares equivale a "+ cantidadConseguida+ " pesos argentinos");
-                    try{
-                        generarAchivo.guardarJson(mon,cantidadConseguida);
-                    }catch(IOException e){
-                        System.out.println(e.getMessage());
-                    }
-
 
                     break;
                 }
@@ -41,6 +38,11 @@ public class Principal {
                     cantidadConseguida = (cantidad * (Double.valueOf(mon.conversion_rate())));
                     System.out.println(cantidad +" pesos agentinos equivale a "+ cantidadConseguida+ " dolares");
                     break;
+                }
+                case 7:{
+                    System.out.println("Historico de intercambios realizados\n");
+                    generarAchivo.leerArchivo(new File("intercambios.json"));
+                   break;
                 }
                 case 8:{
 
@@ -52,10 +54,15 @@ public class Principal {
                     System.out.println("Opcion seleccionada no vàlida");
                 }
             }
-           /* if(opcion >=1 && opcion <8){
-                GeneradorDeArchivos generarAchivo =new GeneradorDeArchivos();
+            if(opcion >=1 && opcion <8 && mon!=null && cantidadConseguida!= 0 ){
+                //GeneradorDeArchivos generarAchivo =new GeneradorDeArchivos();
+                try{
+                    generarAchivo.guardarJson(mon,cantidadConseguida);
+                }catch(IOException e){
+                    System.out.println(e.getMessage());
+                }
 
-            }*/
+            }
         }
 
     }

@@ -14,10 +14,10 @@ public Moneda convertirMonedas(String monedaBase ,String  monedaObjetivo){
     HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create(direccion))
             .build();
-
     try{
         HttpResponse<String> response= client
                 .send(request, HttpResponse.BodyHandlers.ofString());
+        //System.out.println(new Gson().fromJson(response.body(),Moneda.class));
         return new Gson().fromJson(response.body(),Moneda.class);
 
     } catch (Exception e) {
