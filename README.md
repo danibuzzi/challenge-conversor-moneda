@@ -17,8 +17,8 @@ Proyecto en construcción!
 Para probar el sistema es necesario hacer el deploy (despliegue) de la aplicación en un servidor compatible con lenguaje java (ejemplo JBOSS , Glashfish etc)
 
 <h3> Tecnologías utlizadas </h3>
-<ul><li>Java version J2SE </li>
-<ul><li>Libreria GSON para gestion de archivos JSON  en java </li></ul>
+<ul><li>Java version J2SE</li>
+<ul><li>Libreria GSON para gestion de archivos JSON  en java</li></ul>
 
 
 <h3> Instalación y configuraciones: </h3>
