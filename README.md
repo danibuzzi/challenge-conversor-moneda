@@ -18,7 +18,7 @@ Para probar el sistema es necesario hacer el deploy (despliegue) de la aplicaci�
 
 <h3> Tecnologías utlizadas </h3>
 <ul><li>Java version J2SE</li>
-<ul><li>Libreria GSON para gestion de archivos JSON  en java</li></ul>
+<li>Libreria GSON para gestion de archivos JSON  en java</li></ul>
 
 
 <h3> Instalación y configuraciones: </h3>
@@ -28,7 +28,7 @@ Para ejecutar de forma remota debe instalar alojar los archivos en  un servidor 
 <h3> Posibles problemas y soluciones: </h3>
 <ul><li>Falta gestionar adecuadamente el manejo de datos de entrada no válidos (eleccion de valores no númericos) </li>
 <li>Mejorar la visualización del histórico de conversiones de moneda realizadas. </li>
-<li></li>El aspecto gráfico requiere muchas mejoras.</ul>
+<li>El aspecto gráfico requiere muchas mejoras.</li></ul>
 
 
 
