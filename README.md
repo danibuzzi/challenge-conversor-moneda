@@ -8,7 +8,7 @@ Proyecto en construcción!
 
 
 <h3> Funcionalidades </h3>
-<ul><li><b>Muestra de meny y eleccion de opcion.</b>  </li>
+<ul><li><b>Muestra de menú y eleccion de opciones.</b>  </li>
 <li><b>Ingreso de cantidades a convertir y calculo del  intercambio.</b> </li>
 <li><b>Muestra de un históico con las operaciones realizadas.</b> </li></ul>
 <li><b>Salida del programa.</b> </li></ul>
@@ -28,7 +28,7 @@ Para ejecutar de forma remota debe instalar alojar los archivos en  un servidor 
 <h3> Posibles problemas y soluciones: </h3>
 <ul><li>Falta gestionar adecuadamente el manejo de datos de entrada no válidos (eleccion de valores no númericos) </li>
 <li>Mejorar la visualización del histórico de conversiones de moneda realizadas. </li>
-<li></li>El aspecto gráfico requiere muchas mejoras</ul>
+<li></li>El aspecto gráfico requiere muchas mejoras.</ul>
 
 
 
