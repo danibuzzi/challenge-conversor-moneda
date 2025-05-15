@@ -4,24 +4,34 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) throws IOException {
+
         boolean iterar=true;
+        double cantidad=0.0;
+        Scanner entrada =new Scanner(System.in);
+        int opcion=0;
+
         while (iterar){
-            Scanner entrada =new Scanner(System.in);
-            //pido cantidad
-            double cantidad;
+
             double cantidadConseguida=0;
             GeneradorDeArchivos generarAchivo =new GeneradorDeArchivos();
             Moneda mon=null;
-            int opcion=0;
+
             ConversionMoneda convertir =new ConversionMoneda();
             mostrarMenu();
 
-           //do {
-               opcion = entrada.nextInt();
+                do {
 
-               System.out.println("Ingrese la cantidad a cambiar ");
-               cantidad = entrada.nextDouble();
-           //}while (!Integer.valueOf(opcion)) || Double.valueOf(cantidad)!=false)
+                    opcion = entrada.nextInt();
+
+                    System.out.println("Debe ingresar  un nummero de valor entre 1 y 8 ");
+                } while ((opcion > 8) || (opcion < 1));
+
+            if((opcion>=1) && (opcion <7)){
+                System.out.println("Ingrese la cantidad a cambiar ");
+
+                cantidad = entrada.nextDouble();
+
+            }
 
 
             switch (opcion){
@@ -39,6 +49,30 @@ public class Principal {
                     System.out.println(cantidad +" pesos agentinos equivale a "+ cantidadConseguida+ " dolares");
                     break;
                 }
+                case 3:{
+                    mon=convertir.convertirMonedas("USD","BRL");
+                    cantidadConseguida = (cantidad * (Double.valueOf(mon.conversion_rate())));
+                    System.out.println(cantidad +" dolares equivale a "+ cantidadConseguida+ " pesos brasileños");
+                    break;
+                }
+                case 4:{
+                    mon=convertir.convertirMonedas("BRL","USD");
+                    cantidadConseguida = (cantidad * (Double.valueOf(mon.conversion_rate())));
+                    System.out.println(cantidad +" reales brasileños equivale a "+ cantidadConseguida+ " dolares");
+                    break;
+                }
+                case 5:{
+                    mon=convertir.convertirMonedas("USD","COP");
+                    cantidadConseguida = (cantidad * (Double.valueOf(mon.conversion_rate())));
+                    System.out.println(cantidad +" dolares  a "+ cantidadConseguida+ " pesos colombianos");
+                    break;
+                }
+                case 6:{
+                    mon=convertir.convertirMonedas("COP","USD");
+                    cantidadConseguida = (cantidad * (Double.valueOf(mon.conversion_rate())));
+                    System.out.println(cantidad +" pesos colombianos equivale a "+ cantidadConseguida+ " dolares");
+                    break;
+                }
                 case 7:{
                     System.out.println("Historico de intercambios realizados\n");
                     generarAchivo.leerArchivo(new File("intercambios.json"));
@@ -46,8 +80,8 @@ public class Principal {
                 }
                 case 8:{
 
-                    iterar =false;
                     System.out.println("Programa finalizado");
+                    iterar=false;
                     break;
                      }
                 default: {
