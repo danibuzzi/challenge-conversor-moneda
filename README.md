@@ -10,7 +10,7 @@ Proyecto en construcción!
 <h3> Funcionalidades </h3>
 <ul><li><b>Muestra de menú y eleccion de opciones.</b>  </li>
 <li><b>Ingreso de cantidades a convertir y calculo del  intercambio.</b> </li>
-<li><b>Muestra de un históico con las operaciones realizadas.</b> </li></ul>
+<li><b>Muestra de un históico con las operaciones realizadas.</b> </li>
 <li><b>Salida del programa.</b> </li></ul>
 
 <h3> Acceso al proyecto </h3>
@@ -18,7 +18,7 @@ Para probar el sistema es necesario hacer el deploy (despliegue) de la aplicaci�
 
 <h3> Tecnologías utlizadas </h3>
 <ul><li>Java version J2SE </li>
-<ul><li>Libreia GSON para gestion de archivos JSON  en java </li>
+<ul><li>Libreria GSON para gestion de archivos JSON  en java </li></ul>
 
 
 <h3> Instalación y configuraciones: </h3>
