@@ -13,6 +13,19 @@ Proyecto en construcción!
 <li><b>Muestra de un históico con las operaciones realizadas.</b> </li>
 <li><b>Salida del programa.</b> </li></ul>
 
+
+![image](https://github.com/user-attachments/assets/50484fc7-7dad-425a-a089-b769030383cf)
+
+![image](https://github.com/user-attachments/assets/a7572924-4cdf-4df1-81f9-489d59f0d3b2)
+
+
+![image](https://github.com/user-attachments/assets/23631870-f1f3-4168-822a-9e3ce87f20ff)
+
+
+![image](https://github.com/user-attachments/assets/5661cfbc-0003-4ed4-8bd1-b71d449f0175)
+
+
+
 <h3> Acceso al proyecto </h3>
 Para probar el sistema es necesario hacer el deploy (despliegue) de la aplicación en un servidor compatible con lenguaje java (ejemplo JBOSS , Glashfish etc)
 
@@ -22,7 +35,7 @@ Para probar el sistema es necesario hacer el deploy (despliegue) de la aplicaci�
 
 
 <h3> Instalación y configuraciones: </h3>
-Clone el respositorio en su computadora o descargue el archivo zip .Puede abrir los archivos en un editor por ejemplo IntellijIdea y ejecutar localmente el proyecto.
+Clone el respositorio en su computadora o descargue el archivo zip .Puede abrir los archivos en un editor por ejemplo IntelliJIDEA y ejecutar localmente el proyecto.
 Para ejecutar de forma remota debe instalar alojar los archivos en  un servidor web con sopote para lenguaje java y  acceder con el navegador de internet.
 
 <h3> Posibles problemas y soluciones: </h3>
