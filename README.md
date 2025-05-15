@@ -1,4 +1,4 @@
-<h2 align="center"> <b>Challenge amigo secreto para Alura LATAM</b> </h2>
+<h2 align="center"> <b>Challenge conversor de monedas para Alura LATAM</b> </h2>
 
 <h3> Descripción </h3>
 El sistema web permite simular el intercambio entre diferentes monedas y ademas mostrar un histórico de conversiones realizadas.
